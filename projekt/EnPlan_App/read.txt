@@ -1,0 +1,52 @@
+
+
+https://momentjs.com/
+för tids fix
+
+Coding Break: Authentication
+
+Time for another break (if you’d like of course, completely optional).
+
+Let’s take a moment to breathe and think about authentication.
+
+Authentication is huge. Entire occupations devote to specializing in authentication - “auth consultants”. In fact, whole companies devote all their resources to just hooking up authentication for you. Also, In the software engineering community, authentication has long provided a barrier for startups and new applications. After all, how do you get users without a sign up form, sign in form, forgot password link, entire database to handle users, social login with facebook, twitter…… and the problem of authentication goes on and on.
+
+But thanks to firebase (and thanks to google who created firebase!), a lot of this backend logic gets handled for us so we can actually move on to focusing on the React and Redux code.
+
+Hooray for firebase!
+
+Adding goals!
+
+
+
+Summary and Challenges
+Section 5, Lecture 76
+GoalCoach
+
+Congratulations! You just finished the final application in this course. Now you can tackle the world with your own React JS and Redux apps. So let’s review some of the concepts that you encountered while building GoalCoach:
+
+Authentication: allows users to sign up, and sign into an application with information such as an email, password, and displayName.
+
+React Router - a JavaScript library that allows for routing in React applications. With React Router, applications can allow urls to hit specific components.
+
+Firebase - a service provided by google that allows for applications to have real-time databases as well as full authentication.
+
+Firebase references - map to locations on a firebase database to allow manipulation of data through multiple methods.
+
+browserHistory - allows React applications to keep track of the user navigation throughout the application by storing visited urls. Also allows the application to handle redirecting the user to specific components.
+
+combineReducers - a redux method which allows applications to combine multiple reducers and export them as a single reducer.
+
+How about a challenge or two to keep boosting those React and Redux skills?
+
+Challenges:
+
+Create user teams to assign goals to specific teams.
+
+Have a feed of signed in users and assign goals to specific users.
+
+Add a forgot password link that routes to another page where the user can use the firebase reset password method to change their authentication information.
+
+Delete completed goals individually rather than clearing them all at once.
+
+Develop your own full web application with a firebase backend!
