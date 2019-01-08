@@ -3,7 +3,6 @@ import { Link } from 'react-router';
 
 import { firebaseApp } from '../firebase';
 
-
 import '../css/sign.css';
 
 class SignIn extends Component {
@@ -30,32 +29,48 @@ class SignIn extends Component {
 
   render() {
     return(
-      <div className="container">
-        <div className="well form-block">
-          <h2>Sign In</h2>
-          <div className="form-group">
-            <input
-              className="form-control"
-              type="text"
-              placeholder="email"
-              onChange={event => this.setState({email: event.target.value}) }
-              />
-              <input
-                className="form-control"
-                type="password"
-                placeholder="password"
-                onChange={event => this.setState({password: event.target.value}) }
-              />
-              <button
-                className="btn btn-primary"
-                type="button"
-                onClick={() => this.signIn()}
-              >
-                Sign In
-              </button>
+      <div className="body">
+        <div className="all">
+          <div className="container">
+            <div className="jumbotron">
+              <h1>En Plan App</h1>
+            </div>
+            <div className="well form-block">
+              <h2>Logga In</h2>
+              <div className="form-group">
+                <input
+                  className="form-control"
+                  type="text"
+                  placeholder="email"
+                  onChange={event => this.setState({email: event.target.value}) }
+                  />
+                  <input
+                    className="form-control"
+                    type="password"
+                    placeholder="password"
+                    onChange={event => this.setState({password: event.target.value}) }
+                  />
+                  <div className="errorMessage">{this.state.error.message}</div>
+                  <button
+                    className="btn btn-primary"
+                    type="button"
+                    onClick={() => this.signIn()}
+                  >
+                    Logga in
+                  </button>
+              </div>
+              <div className="link"><Link to={'/signup'}>Registrera dig här</Link></div>
+            </div>
           </div>
-          <div>{this.state.error.message}</div>
-          <div className="link"><Link to={'/signup'}>Sign up</Link></div>
+          <button
+            className="btn btn-default"
+            type="button"
+          >
+            Info
+          </button>
+        </div>
+        <div className="info">
+          hgej
         </div>
       </div>
     )

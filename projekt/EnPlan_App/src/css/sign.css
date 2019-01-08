@@ -1,21 +1,36 @@
-.container{
-  zoom: 180%;
-}
+/* b1 background-color: rgba(125, 194, 173, 1);} or  #7dc2ad   */
 
+.all{
+  background-color: rgba(125, 194, 173, 1);
+  height:  100vh;
+}
+.container{
+  zoom: 140%;
+}
+.jumbotron{
+  margin-top: 10px;
+  background-color: #AFDFD0;
+}
 .form-block{
   width: 45%;
+  background-color: #DEF4EE;
 
-  margin:5%;
-  margin-top: 100px;
+  margin-top: -10px;
   margin-left: auto;
   margin-right: auto;
 }
 .link{
-    margin-left: 5%;
+    margin-left: 8%;
+}
+.errorMessage{
+  margin-left: 8%;
+  margin-bottom: 15px;
+  color: #E27D60;
 }
 
 h2{
-  margin:5%;
+  margin-left:8%;
+  margin-bottom: -20px;
 }
 input{
   margin: 5%;
@@ -23,4 +38,11 @@ input{
 }
 button{
   margin-left: 5%;
+}
+.btn.btn-default{
+  background-color: #e8a87c;
+}
+.info{
+  background-color: #e8a87c;
+  height:  100vh;
 }

@@ -14,22 +14,24 @@ signOut(){
 
   render() {
     return(
-      <div className="container">
-        <h3>Goal Coach</h3>
-        <AddGoal />
-        <hr />
-        <h4>Goals</h4>
-        <GoalList />
-        <hr />
-        <h4>Complete Goals</h4>
-        <CompleteGoalList />
-        <hr />
-        <button
-          className="btn btn-danger"
-          onClick={() => this.signOut()}
-        >
-          Sign Out
-        </button>
+      <div>
+        <div className="container">
+          <h3>Goal Coach</h3>
+          <AddGoal />
+          <hr />
+          <h4>Goals</h4>
+          <GoalList />
+          <hr />
+          <h4>Complete Goals</h4>
+          <CompleteGoalList />
+          <hr />
+          <button
+            className="btn btn-danger"
+            onClick={() => this.signOut()}
+          >
+            Sign Out
+          </button>
+        </div>
       </div>
     )
   }
