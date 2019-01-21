@@ -1,4 +1,14 @@
+.col-lg-6{
 
-.AddGoal{
-  margin-bottom: 20px;
+}
+
+.goalList{
+  
+  padding: 10px;
+}
+
+.listItem{
+  background-color: ;
+  margin: 2px;
+  padding: 5px;
 }

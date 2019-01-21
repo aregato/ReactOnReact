@@ -1,26 +1,32 @@
 /* b1 background-color: rgba(125, 194, 173, 1);} or  #7dc2ad   */
+.body{
+  background-color: #AFDFD0;
+}
 
 .all{
-  background-color: rgba(125, 194, 173, 1);
+  /* background-color: rgba(125, 194, 173, 1); */
+  /*background-color: #AFDFD0;*/
   height:  100vh;
 }
 .container{
-  zoom: 140%;
+  zoom: 130%;
+  background-color: white;
+  padding-bottom: 80px;
+
 }
-.jumbotron{
+.jumbotron.top{
   margin-top: 10px;
-  background-color: #AFDFD0;
+  background-color: #DEF4EE;
 }
 .form-block{
-  width: 45%;
   background-color: #DEF4EE;
-
+  /*background-color: rgba(125, 194, 173, 1);*/
   margin-top: -10px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .link{
-    margin-left: 8%;
+    margin-left: 20%;
+    position: absolute;
+    margin-top: -40px;
 }
 .errorMessage{
   margin-left: 8%;
@@ -30,7 +36,7 @@
 
 h2{
   margin-left:8%;
-  margin-bottom: -20px;
+  margin-bottom: 0px;
 }
 input{
   margin: 5%;
@@ -46,3 +52,204 @@ button{
   background-color: #e8a87c;
   height:  100vh;
 }
+.bar{
+  background-color: white;
+  height:  100vh;
+}
+.downA{
+  margin-left: auto;
+  margin-right: auto;
+  width: 5%;
+  margin-top: 4px;
+}
+.downArrow:hover{
+  background-color: #DEF4EE;
+  border-radius: 20px;
+}
+.pres:hover{
+  background-color: #DEF4EE;
+  width:100px;
+  border-radius: 20px;
+}
+.presentation > h4, .presentation > div{
+  margin-left: 60px;
+}
+.presentation > h4{
+  margin-top: 80px;
+}
+.Information.row{
+  margin-left: 40px;
+}
+.Information > h2{
+
+}
+.Information > .well{
+  padding: 100px;
+}
+.jumbotron > p{
+  margin-left: 6%;
+  margin-top: 5px;
+  margin-bottom: -1px;
+}
+.chart{
+  margin-left: 250px;
+}
+.chart > p,.chart > a{
+  margin-left: 8%;
+  margin-top: 10px;
+  font-size: 20px;
+}
+.learn{
+  margin-left: 40px;
+}
+.learn > img{
+  margin-left: 60px;
+}
+.git{
+  margin-top: 20px;
+  margin-left: 60px;
+  height: 80px;
+}
+.learn > .well > ul > li{
+  margin-left: 50px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+.StageOne > h1{
+  text-align: center;
+  font-size: 240px;
+  margin-top: 100px;
+}
+.StageOne > h4{
+  text-align: center;
+  font-size: 40px;
+}
+.StageOne > h5{
+  text-align: center;
+  font-size: 30px;
+
+}
+.Nodebild{
+  height: 100px;
+  margin-left: 370px;
+  margin-top: -30px;
+}
+.reduxBild{
+  height: 100px;
+  margin-left: 200px;
+  margin-top: -10px;
+}
+.firebaseBild{
+  height: 150px;
+  margin-left: 330px;
+  margin-top: -80px;
+}
+.StageOne{
+
+}
+.well.goal{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.well.goal > h2{
+  font-size: 40px;
+  margin-left: 10px;
+}
+.well.goal > p{
+  padding: 10px;
+
+  font-size: 20px;
+}
+.probs > h2{
+  font-size: 40px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+.probs > ul {
+  font-size: 20px;
+}
+.reactApp{
+  margin: 20px;
+}
+
+.udemy{
+  height: 80px;
+
+  margin: 10px;
+
+}
+.method{
+  text-align: center;
+}
+.method > h2{
+  margin-left: 10px;
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+.method > p{
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bootstraps{
+  height: 100px;
+  margin-top: -100px;
+  margin-left: 100px;
+  margin-bottom: -60px;
+}
+
+.react-logo{
+   display: inline-block;
+   border-radius:50%;
+   border:10px solid #00d8ff;
+
+   animation-name:rotate;
+   animation-duration: 5s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+    margin-top: 100px;
+    margin-left: 44%;
+ }
+
+ .react-logo , .react-logo:before , .react-logo:after{
+   position:absolute;
+   display: inline-block;
+   width:200px;
+   height:70px;
+   border-radius:50%;
+   border:10px solid #00d8ff;
+ }
+
+ .nucleo , .react-logo , .react-logo:before , .react-logo:after {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .nucleo{
+   width:40px;
+   height:40px;
+   border-radius:100%;
+   background:#00d8ff;
+ }
+
+ .react-logo:before , .react-logo:after{
+   content:"";
+ }
+
+ .react-logo:after{
+   transform:rotate(-57deg);
+ }
+
+ .react-logo:before{
+   transform:rotate(57deg);
+ }
+
+ @keyframes rotate{
+
+   100%{
+     transform:rotate(360deg);
+   }
+ }

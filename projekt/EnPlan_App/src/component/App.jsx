@@ -5,6 +5,8 @@ import AddGoal from './AddGoal';
 import GoalList from './GoalList';
 import CompleteGoalList from './CompleteGoalList';
 
+import Timer from './Timer';
+
 import '../css/App.css'
 
 class App extends Component {
@@ -14,22 +16,34 @@ signOut(){
 
   render() {
     return(
-      <div>
+      <div className="app">
         <div className="container">
-          <h3>Goal Coach</h3>
-          <AddGoal />
+        <br />
+          <div className="well">
+            <AddGoal />
+          </div>
+            <hr />
+          <div className="row">
+          <div className="col-lg-5">
+          <div className="well">
+            <GoalList />
+          </div>
+          </div>
+          <div className="col-lg-5">
+          <div className="well">
+            <CompleteGoalList />
+          </div>
+          </div>
+        </div>
           <hr />
-          <h4>Goals</h4>
-          <GoalList />
-          <hr />
-          <h4>Complete Goals</h4>
-          <CompleteGoalList />
+
+
           <hr />
           <button
             className="btn btn-danger"
             onClick={() => this.signOut()}
           >
-            Sign Out
+            Logga ut
           </button>
         </div>
       </div>
@@ -39,6 +53,7 @@ signOut(){
 
 function mapStateToProps(state){
   //console.log('state', state);
+  //<Timer />
   return {}
 }
 

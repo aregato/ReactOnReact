@@ -15,7 +15,7 @@ class GoalItem extends Component {
     completeGoalRef.push({email, title});
   }
   render(){
-    console.log('this.props.goal', this.props.goal);
+    //console.log('this.props.goal', this.props.goal);
     const { email, title } = this.props.goal;
     return(
       <div className="goalitem">
@@ -25,7 +25,7 @@ class GoalItem extends Component {
           className="btn btn-sm btn-primary"
           onClick={() => this.completeGoal()}
         >
-          Complete
+          Klar
         </button>
       </div>
     )

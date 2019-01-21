@@ -8,34 +8,49 @@ class AddGoal extends Component {
   constructor(props){
     super(props);
     this.state = {
-      title: ''
+      title: '',
+      error_message: ''
     }
   }
 
   addGoal(){
-    console.log('this', this);
+    //console.log('this', this);
     const { title } = this.state;
     const { email } = this.props.user;
+    console.log(title)
+    if(title !== ""){
+      goalRef.push({email, title});
+      this.refs.goalInput.value = '';
+      //document.getElementById("addGoal").style.backgroundColor = "white";
+    }else{
+      let error_message = "Du måste ange en text till din uppgift. Denna uppgift läggs upp i den delade listan."
+      //document.getElementById("addGoal").style.backgroundColor = "red";
+      this.setState({error_message})
+      console.log("Inget värde");
+    }
 
-    goalRef.push({email, title});
   }
 
   render() {
     return(
       <div className="form-inline">
+        <h4>Lägg till en uppgift</h4>
         <div className="form-group">
           <input
+            id="addGoal"
             type="text"
-            placeholder="Add a goal"
+            placeholder="Skriv en text"
             className="form-control"
             onChange={event => this.setState({title: event.target.value})}
+            ref="goalInput"
           />
+          <div className="errorMsg">{this.state.error_message}</div>
           <button
             className="btn btn-success"
             type="button"
             onClick={() => this.addGoal()}
           >
-            Submit
+            Lägg till
           </button>
         </div>
       </div>

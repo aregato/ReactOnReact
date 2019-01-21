@@ -40,13 +40,13 @@ class SignUp extends Component {
                 <input
                   className="form-control"
                   type="text"
-                  placeholder="email"
+                  placeholder="E-mail"
                   onChange={event => this.setState({email: event.target.value}) }
                   />
                   <input
                     className="form-control"
                     type="password"
-                    placeholder="password"
+                    placeholder="Lösenord"
                     onChange={event => this.setState({password: event.target.value}) }
                   />
                   <div className="errorMessage">{this.state.error.message}</div>
@@ -61,16 +61,8 @@ class SignUp extends Component {
               <div className="link"><Link to={'/signIn'}>Är du redan medlem? Logga in istället</Link></div>
             </div>
           </div>
-          <button
-            className="btn btn-default"
-            type="button"
-          >
-            Info
-          </button>
         </div>
-        <div className="info">
-          hgej
-        </div>
+
       </div>
     )
   }

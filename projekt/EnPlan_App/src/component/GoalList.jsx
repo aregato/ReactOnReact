@@ -14,21 +14,23 @@ class GoalList extends Component {
         const { email, title } = goal.val();
         const serverKey = goal.key;
         goals.push({email, title, serverKey});
-        console.log('goal', goal);
+        //console.log('goal', goal);
       })
       this.props.setGoals(goals);
     })
   }
 
   render(){
-    console.log('this.props.goals', this.props.goals);
+    //console.log('this.props.goals', this.props.goals);
     return(
-      <div>
+      <div className="goalList">
+      <h4>Delade uppgifter</h4>
         {
           this.props.goals.map((goal, index) => {
             return(
 
               <GoalItem key={index} goal={goal} />
+
             )
           })
         }

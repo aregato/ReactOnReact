@@ -22,24 +22,26 @@ class CompleteGoalList extends Component {
   }
 
   render(){
-    console.log('this.props.completeGoals',this.props.completeGoals);
+    //console.log('this.props.completeGoals',this.props.completeGoals);
     return(
-      <div>
+      <div className="goalList">
+      <h4>Avklarade uppgifter</h4>
         {
           this.props.completeGoals.map((completeGoals, index) => {
           const {title, email} = completeGoals;
           return (
-            <div key={index}>
+            <div className="listItem" key={index}>
               <strong>{title}</strong> completed by <em>{email}</em>
             </div>
             )
           })
         }
+        <hr />
         <button
           className="btn btn-primary"
           onClick={() => this.clearCompleted()}
         >
-          Clear All
+          Rensa alla
         </button>
       </div>
     )
