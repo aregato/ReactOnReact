@@ -8,6 +8,7 @@ import { firebaseApp } from '../firebase';
 
 import timechart from '../images/timechart.png'
 
+import { CSSTransition } from 'react-transition-group';
 import '../css/sign.css';
 
 class SignIn extends Component {
@@ -18,7 +19,8 @@ class SignIn extends Component {
       password: '',
       error: {
         message: ''
-      }
+      },
+      appearHome: true,
     }
   }
 
@@ -54,9 +56,16 @@ class SignIn extends Component {
   }
 
   render() {
+    const { appearHome } = this.state;
     return(
       <div className="body">
         <div className="all">
+        <CSSTransition
+          in={appearHome}
+          appear={true}
+          timeout={1000}
+          classNames="fade"
+        >
           <div className="container">
             <div className="jumbotron top">
               <h1>En Plan App</h1>
@@ -108,6 +117,7 @@ class SignIn extends Component {
               </div>
             </div>
           </div>
+          </CSSTransition>
           <div className="downA">
             <a onClick={() => this.scrollOne()}>
               <img className="downArrow" src="https://img.icons8.com/windows/96/000000/circled-chevron-down.png"/>
@@ -253,7 +263,6 @@ class SignIn extends Component {
           </ul>
           <img className="reactApp" src="https://static.viget.com/server-side_with_react.jpg?mtime=20160426161334"/>
         </div>
-
         <div className="downA">
           <a onClick={() => this.scrollFive()}>
             <img className="downArrow" src="https://img.icons8.com/windows/96/000000/circled-chevron-down.png"/>

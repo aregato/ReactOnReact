@@ -21,12 +21,13 @@ class AddGoal extends Component {
     if(title !== ""){
       goalRef.push({email, title});
       this.refs.goalInput.value = '';
+      this.state.title = "";
+
       //document.getElementById("addGoal").style.backgroundColor = "white";
     }else{
       let error_message = "Du måste ange en text till din uppgift. Denna uppgift läggs upp i den delade listan."
       //document.getElementById("addGoal").style.backgroundColor = "red";
       this.setState({error_message})
-      console.log("Inget värde");
     }
 
   }

@@ -1,4 +1,4 @@
-import { SIGNED_IN, SET_GOALS, SET_COMPLETED } from '../constants';
+import { SIGNED_IN, SET_GOALS, SET_COMPLETED, ADD_REMINDER, DELETE_REMINDER, CLEAR_REMINDERS} from '../constants';
 
 export function logUser(email) {
   const action = {
@@ -7,7 +7,6 @@ export function logUser(email) {
   }
   return action;
 }
-
 
 export function setGoals(goals){
   const action = {
@@ -23,4 +22,27 @@ export function setCompleted(completeGoals) {
     completeGoals
   }
   return action;
+}
+
+export const addReminder = (text, dueDate) => {
+  const action = {
+    type: ADD_REMINDER,
+    text,
+    dueDate
+  }
+  return action;
+}
+
+export const deleteReminder = (id) => {
+  const action = {
+    type: DELETE_REMINDER,
+    id
+  }
+  return action;
+}
+
+export const clearReminders = () => {
+    return {
+      type: CLEAR_REMINDERS
+    }
 }
