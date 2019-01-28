@@ -196,7 +196,7 @@ class SignIn extends Component {
           </div>
           <div className="col-lg-4 col-md-4 col-sm-4 chart">
             <h2>Självständig fördjupning</h2>
-            <p>Detta arbete på hög abstraktionsniva kan man säga innehöll fem olika delar. Till en början behövde jag göra <strong>efterforskning</strong> för att veta hur jag skulle gå tillväga och för att förstå React.</p>
+            <p>På hög abstraktionsniva kan man säga att detta projekt innehöll fem olika delar. Till en början behövde jag göra <strong>efterforskning</strong> för att veta hur jag skulle gå tillväga och för att förstå React.</p>
             <p>Till min efterforskning skrev jag olika typer utav <strong>Dokumentering</strong> för att samla det jag lärt mig och upptäckt</p>
             <p>Under tider gjorde jag även olika <strong>Testprojekt</strong> för att se hur man använder React rent praktiskt och på vilka olika sätt man kan göra detta.</p>
             <p>Efter det kände jag mig redo för att börja bygga <strong>(Slutprojekt)</strong> en planerad webbapplikation för att visa det jag lärt mig med React.</p>
@@ -222,11 +222,11 @@ class SignIn extends Component {
 
         <div className="container method">
         <h2>Metod</h2>
-        <p>På Udemy tog jag två stycken kurser. En kurs där jag fick lära mig grunderna i React och en kurs där jag fick lära mig att skapa en modern webbapplikation med React tilsammans med Redux.</p>
+        <h4>React hett ämne just nu!</h4>
+        <p>Mycket lätt tillgång till artiklar och rapporter och videos om React på internet tackvare dess spridning.</p>
+        <a href="https://github.com/trending/javascript">Trändar på GitHub</a><br/>
         <img className="udemy" src="https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg"/>
-        <h3>React hett just nu!</h3>
-        <a href="https://github.com/trending/javascript">Trändar på GitHub</a>
-        <p>Mycket lätt tillgång till artiklar och rapporter om React på internet tackvare dess spridning.</p>
+        <p>På Udemy tog jag två stycken kurser. En kurs där jag fick lära mig grunderna i React och en kurs där jag fick lära mig att skapa en modern webbapplikation med React tilsammans med Redux.</p>
         </div>
         <br/><br/><br/><br/><br/><br/>
         <div className="downA">
@@ -246,19 +246,17 @@ class SignIn extends Component {
           <h2>Mål</h2>
           <p>Denna självständiga fördjupning handlar om att lära sig arbeta med verktyget React som spets i frontend-utvecklingen. Projektets mål är att ta fram relevant information om biblioteket och dess påverkan i en modern webbapplikation.</p>
           <p>Projektet kommer ta reda på varför React har blivit så använt bland företagen på arbetsmarknaden och varför många använder React för sina webbsidor.</p>
-
           </div>
         </div>
         <div className="col-lg-6 col-md-6 col-sm-6 probs">
           <h2>Problemformulering</h2>
           <ul>
-            <li>HTML - oldschool?</li>
+            <li>Hur bygger man en modern webbapplikation?</li>
             <li>Varför React?</li>
             <ul>
               <li>Poplärt på arbetsmarknaden</li>
-              <li>Använd av stora företag</li>
+              <li>Används av stora företag</li>
             </ul>
-            <li>Hur bygger man en modern webbapplikation?</li>
             <li>Vilka problem löser React?</li>
           </ul>
           <img className="reactApp" src="https://static.viget.com/server-side_with_react.jpg?mtime=20160426161334"/>

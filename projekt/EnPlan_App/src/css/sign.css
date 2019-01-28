@@ -31,7 +31,7 @@
 .errorMessage{
   margin-left: 8%;
   margin-bottom: 15px;
-  color: #E27D60;
+  color: black;
 }
 
 h2{
@@ -181,6 +181,7 @@ button{
 }
 .method{
   text-align: center;
+  margin-top: 60px;
 }
 .method > h2{
   margin-left: 10px;
@@ -198,6 +199,11 @@ button{
   margin-top: -100px;
   margin-left: 100px;
   margin-bottom: -60px;
+}
+.signup{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* appear - on page load */

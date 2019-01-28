@@ -36,7 +36,7 @@ class SignUp extends Component {
             <div className="jumbotron">
               <h1>En Plan App</h1>
             </div>
-            <div className="well form-block">
+            <div className="well form-block signup">
               <h2>Registration </h2>
               <div className="form-group">
                 <input
